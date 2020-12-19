@@ -1,5 +1,5 @@
 FROM mcr.microsoft.com/dotnet/core/sdk:3.1.301-alpine3.12
-RUN apk update && apk add --update nodejs~=12.17 npm~=12.17 sshpass~=1.06 git~=2.26.2 openssh-client~=8.3_p1-r1
+RUN apk update && apk add --update nodejs~=12.18 npm~=12.18 sshpass~=1.06 git~=2.26.2 openssh-client~=8.3_p1-r1
 RUN apk add curl~=7.69.1 tar~=1.32-r1
 RUN apk add --no-cache fontconfig && \
   mkdir -p /usr/share && \
